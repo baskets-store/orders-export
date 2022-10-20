@@ -1,7 +1,7 @@
 # orders-export
 Export order information as csv. 
 
-## guide to install the bookmark.
+## Handleiding om de export bookmark te installeren.
 Dit is een korte handleiding voor het installeren van de bookmark (voor chrome).
 
 ### Stap 1: Naar je bookmarkmanager 
