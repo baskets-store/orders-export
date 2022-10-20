@@ -1,5 +1,5 @@
-
-//baskets demo versie
+//alle code
+//de code: voor alle locaties
 // var script = document.createElement('script');script.src = "https://unpkg.com/object-exporter@3.2.1/dist/objectexporter.min.js";document.getElementsByTagName('head')[0].appendChild(script);
     
 // const checked = document.querySelectorAll(".-checked");
@@ -23,13 +23,9 @@
 //     order.forEach(item =>  array.push({"ordernummer": item.order_id, "date": item.created_at, "productbrand": item.order_product.brand_name, "product-title": item.variant.product.nl.title,  "productbarcode": item.order_product.barcode, "qnty": item.order_product.quantity ,"sku": item.order_product.sku,"location": item.location_name }))
 // });
 
-// for (let i = 0; i< array.length; i++){
-//     if (array[i].location == activeStore) {
-//        await exportData.push(array[i])
-// }}
 
 // await objectExporter({
-//     exportable: exportData,
+//     exportable: array,
 //     type: 'csv',
 //     fileName: 'export',
 //     headers: ["order number", "date", "product brand", "product name", "product barcode", "qnty", "sku", "location"],
@@ -40,8 +36,7 @@
 // f();
 
 
-//baskets versie
-//Jordaan
+// code voor de Jordaan
 // var script = document.createElement('script');script.src = "https://unpkg.com/object-exporter@3.2.1/dist/objectexporter.min.js";document.getElementsByTagName('head')[0].appendChild(script);
     
 // const checked = document.querySelectorAll(".-checked");
@@ -82,7 +77,7 @@
 // f();
 
 
-// Pijp
+// Code voor de Pijp
 // var script = document.createElement('script');script.src = "https://unpkg.com/object-exporter@3.2.1/dist/objectexporter.min.js";document.getElementsByTagName('head')[0].appendChild(script);
     
 // const checked = document.querySelectorAll(".-checked");
