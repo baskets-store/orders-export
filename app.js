@@ -25,7 +25,7 @@ for (let i = 0; i <ordername.length; i++){
 
 await order.forEach(order => {
     order.forEach(item =>  array.push({"ordername": document.querySelector(`tr[data-id="${item.order_id}"]`).querySelector('a').innerHTML.trim()
-    ,"orderid": item.order_id, "date": item.created_at, "productbrand": item.order_product.brand_name, "product-title": item.variant.product.nl.title,  "productbarcode": item.order_product.barcode, "qnty": item.order_product.quantity ,"sku": item.order_product.sku,"location": item.location_name }))
+    ,"orderid": item.order_id, "date": item.created_at , "productbrand": item.order_product.brand_name, "product-title": item.variant.product.nl.title,  "productbarcode": item.order_product.barcode, "qnty": item.order_product.quantity ,"sku": item.order_product.sku,"location": item.location_name }))
 });
 
 
@@ -44,3 +44,5 @@ await objectExporter({
 }
 
 f();
+
+
