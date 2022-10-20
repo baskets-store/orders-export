@@ -21,6 +21,6 @@ Geef de bookmark een naam > kies hieronder een locatie en voeg de code van de de
 
 #### Export van alle locaties
 
-### Stap 5: gebruik de bookmark.
+### Stap 4: gebruik de bookmark.
 Je kan in lightspeed de orders selecteren en vervolgens op de aangemaakte bookmark drukken. Er wordt daarna een csv van de orders gedownload (dit kan een paar seconde duren). Deze zijn gefilterd op basis van je locatie.
 
