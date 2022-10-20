@@ -1,30 +1,32 @@
 # Orders-export
 Export order information as csv. 
 
-## Handleiding om de export bookmark te installeren.
-Dit is een korte handleiding voor het installeren van de bookmark (voor chrome).
+## Guide to install the export bookmark.
+This is a short manual to help you install the baskèts export bookmark (for chrome).
 
-### Stap 1: Naar je bookmarkmanager 
-Naar bladwijzers > bladwijzermanager 
+### Step 1: Go to your bookmarkmanager 
+Go to boomarks > bookmarkmanager 
 
-### Stap 2: Voeg nieuwe bookmark toe
-Druk rechtsboven op de drie puntjes > Nieuwe bookmark toevoegen
+### Step 2: Add the new bookmark
+Press the three dots at the right top of the page > Click on "Add new bookmark"
 
-### Stap 3: Maak de bookmark aan
-Geef de bookmark een naam > kies hieronder een locatie en voeg de code van de desbetreffende locatie toe aan de url.
+### Step 3: Create the bookmark
+Give the bookmark a (random)name> Choose a location from below, and add the code of the location to the url of the bookmark.
 
-#### Jordaan
+#### Location: Jordaan
 https://github.com/baskets-store/orders-export/blob/main/jordaan
 
-#### de Pijp
+#### Location: de Pijp
 https://github.com/baskets-store/orders-export/blob/main/de-pijp
 
-#### Kantoor
+#### Location: Kantoor
 https://github.com/baskets-store/orders-export/blob/main/kantoor
 
-#### Export van alle locaties
+#### Location: Export van alle locaties
 https://github.com/baskets-store/orders-export/blob/main/alle-locaties
 
-### Stap 4: Gebruik de bookmark.
+### Step 4: Use the bookmark.
 Je kan in lightspeed de orders selecteren en vervolgens op de aangemaakte bookmark drukken. Er wordt daarna een csv van de orders gedownload (dit kan een paar seconde duren). Deze zijn gefilterd op basis van je locatie.
+
+You can now use the bookmark by selecting orders and click on the bookmark. A csv of the orders will then be downloaded (this may take a few seconds). The orders are filtered based on the location you have chosen.
 
