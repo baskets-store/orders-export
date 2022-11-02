@@ -26,13 +26,13 @@ async function f () {
 
     const lineItem = {
         ordername: order.number,
-        date: order.location_order_products.find(item => item.order_product_id === product.id)?.created_at,
+        date: order.created_at,
         name: product.product_title,
         qnty: product.quantity,
         sku: product.sku,
         size: product.variant_title,
-        location: order.location_order_products.find(item => item.order_product_id === product.id)?.location_name,
-        status: order.location_order_products.find(item => item.order_product_id === product.id)?.stock_status   
+        location: order.inventory_location,
+        status: order.status   
     };
     array.push(lineItem);    
     })
@@ -42,7 +42,8 @@ async function f () {
 for (let i = 0; i< array.length; i++){
     if (array[i].location == activeStore) {
        await exportData.push(array[i])
-}};
+}
+};
 
 await objectExporter({
     exportable: exportData,
