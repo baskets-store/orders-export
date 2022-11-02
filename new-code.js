@@ -19,7 +19,6 @@ async function f () {
 };
 
 
-
  await orders.forEach(order =>{
 
     order.order_products.forEach(product => {
@@ -45,10 +44,33 @@ for (let i = 0; i< array.length; i++){
 }
 };
 
+const date = new Date();
+
+let day = date.getDate();
+let month = date.getMonth() + 1;
+let year = date.getFullYear();
+let hours = date.getHours();
+let minutes = date.getMinutes();
+
+let fileName = "";
+
+if (activeStore == "Baskèts Jordaan"){
+    fileName = `jordaan_export_${day}_${month}_${year}_${hours}:${minutes}`;
+}
+else if (activeStore == "Baskèts De Pijp"){
+    fileName = `de_pijp_export_${day}_${month}_${year}_${hours}:${minutes}`;
+}
+else if (activeStore == "Kantoor"){
+    fileName = `kantoor_export_${day}_${month}_${year}_${hours}:${minutes}`;
+}
+else {
+    fileName = `order_export_allelocaties_${day}_${month}_${year}_${hours}:${minutes}`;
+};
+
 await objectExporter({
     exportable: exportData,
     type: 'xls',
-    fileName: 'export',
+    fileName: fileName,
     headers: ["Order", "Datum Order", "Item", "Qnty", "SKU (Itemcode)", "Size", "Location", "Status"],
   })
 }
