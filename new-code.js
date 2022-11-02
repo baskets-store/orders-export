@@ -25,18 +25,18 @@ async function f () {
 
     const lineItem = {
         ordername: order.number,
-        date: order.location_order_products.find(item => item.order_product_id === product.id)?.created_at,
+        date: order.location_order_products.find(item => item.order_product_id === product.id)?.created_at || order.created_at,
         name: product.product_title,
         qnty: product.quantity,
         sku: product.sku,
         size: product.variant_title,
-        location: order.location_order_products.find(item => item.order_product_id === product.id)?.location_name,
-        status: order.location_order_products.find(item => item.order_product_id === product.id)?.stock_status   
+        location: order.location_order_products.find(item => item.order_product_id === product.id)?.location_name || order.inventory_location,
+        status: order.location_order_products.find(item => item.order_product_id === product.id)?.stock_status   ||  order.status
     };
     array.push(lineItem);    
     })
 });
-
+ 
 
 for (let i = 0; i< array.length; i++){
     if (array[i].location == activeStore) {
