@@ -58,7 +58,7 @@ await objectExporter({
     exportable: exportData,
     type: 'xls',
     fileName: fileName,
-    headers: ["Order", "Datum Order", "Item", "Qnty", "SKU (Itemcode)", "Size", "Location", "Status", "shipment"],
+    headers: ["Order", "Datum Order", "Item", "Qnty", "SKU (Itemcode)", "Size", "Location", "Status", "Shipment"],
   })
 }
 f();
